@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Links</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(135deg, #0f172a, #1e293b);
+        padding: 20px;
+      }
+
+      .container {
+        text-align: center;
+        width: 100%;
+      }
+
+      h1 {
+        color: #fff;
+        margin-bottom: 30px;
+        font-size: 26px;
+      }
+
+      .icons {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        max-width: 500px;
+        margin: auto;
+      }
+
+      @media (max-width: 768px) {
+        .icons {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+
+      @media (max-width: 480px) {
+        .icons {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      .icon-box {
+        text-align: center;
+      }
+
+      .icon {
+        width: 100%;
+        aspect-ratio: 1/1;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-size: 28px;
+        cursor: pointer;
+        transition: 0.3s;
+        backdrop-filter: blur(10px);
+        text-decoration: none;
+      }
+
+      .icon:hover {
+        transform: translateY(-6px) scale(1.05);
+      }
+
+      .label {
+        margin-top: 8px;
+        color: #ccc;
+        font-size: 14px;
+      }
+
+      /* COLORS */
+      .facebook:hover {
+        background: #1877f2;
+      }
+
+      .instagram:hover {
+        background: #e1306c;
+      }
+
+      .whatsapp:hover {
+        background: #25d366;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>My Social Links</h1>
+
+      <div class="icons">
+
+        <!-- FACEBOOK -->
+        <div class="icon-box">
+          <a
+            class="icon facebook"
+            href="https://www.facebook.com/share/18rGPLwqkh/?mibextid=wwXIfr"
+            target="_blank"
+          >
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <div class="label">Facebook</div>
+        </div>
+
+        <!-- INSTAGRAM -->
+        <div class="icon-box">
+          <a
+            class="icon instagram"
+            href="https://www.instagram.com/nexuscommunity.eg"
+            target="_blank"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <div class="label">Instagram</div>
+        </div>
+
+        <!-- WHATSAPP -->
+        <div class="icon-box">
+          <a
+            class="icon whatsapp"
+            href="https://wa.me/+201558009747"
+            target="_blank"
+          >
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <div class="label">WhatsApp</div>
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>
