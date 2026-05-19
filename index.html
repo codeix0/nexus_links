@@ -23,7 +23,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background: linear-gradient(135deg, #0f172a, #1e293b);
+        background: black;
         padding: 20px;
       }
 
@@ -33,28 +33,32 @@
       }
 
       h1 {
-        color: #fff;
+        color: #a6a0c4;
         margin-bottom: 30px;
         font-size: 26px;
       }
 
       .icons {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         gap: 20px;
-        max-width: 500px;
+        max-width: 160px;
         margin: auto;
+      }
+
+      i {
+        color: #9c4be3;
       }
 
       @media (max-width: 768px) {
         .icons {
-          grid-template-columns: repeat(3, 1fr);
+          grid-template-columns: repeat(1, 1fr);
         }
       }
 
       @media (max-width: 480px) {
         .icons {
-          grid-template-columns: repeat(2, 1fr);
+          grid-template-columns: repeat(1, 1fr);
         }
       }
 
@@ -84,7 +88,7 @@
 
       .label {
         margin-top: 8px;
-        color: #ccc;
+        color: #a6a0c4;
         font-size: 14px;
       }
 
@@ -100,11 +104,18 @@
       .whatsapp:hover {
         background: #25d366;
       }
+      .gmail:hover {
+        background-color: white;
+      }
+      img {
+        width: 200px;
+      }
     </style>
   </head>
 
   <body>
     <div class="container">
+      <img src="./images//IMG_6217.PNG" alt="Profile Image">
       <h1>My Social Links</h1>
 
       <div class="icons">
@@ -144,6 +155,28 @@
           </a>
           <div class="label">WhatsApp</div>
         </div>
+
+        <div class="icon-box">
+          <a
+            class="icon phone"
+            href="https://wa.me/+201558009747"
+            target="_blank"
+          >
+            <i class="fas fa-phone"></i>
+          </a>
+          <div class="label">Phone</div>
+        </div>
+
+        <!-- <div class="icon-box">
+          <a
+            class="icon gmail"
+            href="mailto:eslamelramady3@gmail.com"
+            
+          >
+            <i class="fas fa-envelope"></i>
+          </a>
+          <div class="label">Gmail</div>
+        </div> -->
 
       </div>
     </div>
